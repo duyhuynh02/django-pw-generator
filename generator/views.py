@@ -6,7 +6,7 @@ def home(request):
     return render(request, 'home.html')
 
 def generator(request):
-    characters= list('abcdefghijklmnopqrstuvwxyz')
+    characters = list('abcdefghijklmnopqrstuvwxyz')
 
     if request.GET.get('uppercase'):
         characters.extend('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
