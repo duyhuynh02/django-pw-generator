@@ -20,5 +20,4 @@ def generator(request):
     for c in range(length):
         generator_password = choice(characters)
         mypassword += generator_password
-        
     return render(request,  'generator.html', {'password': mypassword})
